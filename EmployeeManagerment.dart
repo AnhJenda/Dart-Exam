@@ -14,8 +14,15 @@ class EmployeeManagerment{
     employees.add(employee);
   }
 
-  List<Employee> getAllEmployee() {
-    return employees;
+  void getAllEmployee() {
+    for (var employee in employees) {
+      print('ID: ${employee.id}');
+      print('Full Name: ${employee.fullName}');
+      print('Birthday: ${employee.birthday}');
+      print('Address: ${employee.address}');
+      print('Phone Number: ${employee.phoneNumber}');
+      print('------------');
+    }
   }
 
   void updateEmployee(int id) {

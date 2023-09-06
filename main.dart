@@ -1,11 +1,10 @@
 import 'dart:io';
 
-import 'Employee.dart';
 import 'EmployeeManagerment.dart';
 
 void main() {
 
-  EmployeeManagement employeeManagement = EmployeeManagement();
+  EmployeeManagerment employeeManagement = EmployeeManagerment();
 
   while (true) {
     print("Menu:");
@@ -22,7 +21,7 @@ void main() {
         employeeManagement.addNewEmployee();
         break;
       case '2':
-        employeeManagement.showAllEmployee();
+        employeeManagement.getAllEmployee();
         break;
       case '3':
       print("Enter the Employee ID to update: ");
@@ -31,7 +30,7 @@ void main() {
         break;
       case '4':
         print("All Employee Information:");
-        employeeManagement.showAllEmployee();
+        employeeManagement.getAllEmployee();
         break;
       case '5':
         exit(0);
