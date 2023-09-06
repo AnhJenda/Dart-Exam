@@ -19,15 +19,15 @@ void main() {
 
     switch (choice) {
       case '1':
-        employeeManagement.addNewEmployee(newEmployee);
+        employeeManagement.addNewEmployee();
         break;
       case '2':
         employeeManagement.showAllEmployee();
         break;
       case '3':
-        var id = readInt("Enter the Employee ID to update: ");
-        var updatedEmployee = readEmployeeDetails();
-        employeeManagement.updateEmployee(id, updatedEmployee);
+      print("Enter the Employee ID to update: ");
+        var id = stdin.readLineSync();
+        employeeManagement.updateEmployee(id);
         break;
       case '4':
         print("All Employee Information:");

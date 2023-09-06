@@ -5,12 +5,12 @@ class EmployeeManagerment{
   List<Employee> employees = [];
 
   void addNewEmployee() {
-    String? id = stdin.readLineSync();
-    String? fullName = stdin.readLineSync();
-    String? birthday = stdin.readLineSync();
-    String? address = stdin.readLineSync();
-    String? phoneNumber = stdin.readLineSync();
-    Employee employee = new Employee(id, fullName, birthday, address, phoneNumber);
+    var id = stdin.readLineSync();
+    var fullName = stdin.readLineSync();
+    var birthday = stdin.readLineSync();
+    var address = stdin.readLineSync();
+    var phoneNumber = stdin.readLineSync();
+    Employee employee = new Employee(id.toString(), fullName.toString(), birthday.toString(), address.toString(), phoneNumber.toString());
     employees.add(employee);
   }
 
@@ -21,12 +21,12 @@ class EmployeeManagerment{
   void updateEmployee(int id) {
     for (int i = 0; i < employees.length; i++) {
       if (employees[i].id == id) {
-        String? id = stdin.readLineSync();
-        String? fullName = stdin.readLineSync();
-        String? birthday = stdin.readLineSync();
-        String? address = stdin.readLineSync();
-        String? phoneNumber = stdin.readLineSync();
-        Employee employee = new Employee(id, fullName, birthday, address, phoneNumber);
+        var id = stdin.readLineSync();
+      var fullName = stdin.readLineSync();
+      var birthday = stdin.readLineSync();
+      var address = stdin.readLineSync();
+      var phoneNumber = stdin.readLineSync();
+      Employee employee = new Employee(id.toString(), fullName.toString(), birthday.toString(), address.toString(), phoneNumber.toString());
         employees[i] = employee;
         break;
       }
