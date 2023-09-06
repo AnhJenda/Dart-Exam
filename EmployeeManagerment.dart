@@ -5,10 +5,15 @@ class EmployeeManagerment{
   List<Employee> employees = [];
 
   void addNewEmployee() {
+    print("Enter id: ");
     var id = stdin.readLineSync();
+    print("Enter fullName: ");
     var fullName = stdin.readLineSync();
+    print("Enter birthday: ");
     var birthday = stdin.readLineSync();
+    print("Enter address: ");
     var address = stdin.readLineSync();
+    print("Enter phonenumber: ");
     var phoneNumber = stdin.readLineSync();
     Employee employee = new Employee(id.toString(), fullName.toString(), birthday.toString(), address.toString(), phoneNumber.toString());
     employees.add(employee);
@@ -25,7 +30,7 @@ class EmployeeManagerment{
     }
   }
 
-  void updateEmployee(int id) {
+  void updateEmployee(String id) {
     for (int i = 0; i < employees.length; i++) {
       if (employees[i].id == id) {
         var id = stdin.readLineSync();

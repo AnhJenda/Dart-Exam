@@ -26,7 +26,7 @@ void main() {
       case '3':
       print("Enter the Employee ID to update: ");
         var id = stdin.readLineSync();
-        employeeManagement.updateEmployee(id);
+        employeeManagement.updateEmployee(id.toString());
         break;
       case '4':
         print("All Employee Information:");
